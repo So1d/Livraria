@@ -1,0 +1,80 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria Online</title>
+    <link rel="stylesheet" href="css.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo à Livraria Online</h1>
+        <img src="livrada.png" id="livro">
+    </header>
+
+    <div id="conteudo" class="container">
+        <p>Insira o valor total da sua compra:</p>
+        <input type="number" id="valorCompra" class="input" placeholder="Insira o valor em R$">
+        <button onclick="calcularDesconto()" class="button">Calcular Desconto</button>
+        <p>Desconto aplicado: <span id="desconto" class="discount"></span></p>
+    </div>
+
+    <script>
+        function calcularDesconto() {
+            const valorCompra = parseFloat(document.getElementById('valorCompra').value);
+
+            let desconto = 0;
+
+            if (valorCompra > 200) {
+                desconto = 0.2; // 20%
+            } else if (valorCompra > 100) {
+                desconto = 0.1; // 10%
+            } else {
+                desconto = 0.05; // 5%
+            }
+
+            const valorDesconto = valorCompra * desconto;
+            document.getElementById('desconto').textContent = `R$ ${valorDesconto.toFixed(2)}`;
+        }
+    </script>
+        <h3>Principais livro a venda hoje:</h3>
+        <ul class="produtos">
+            <li>
+                <h2>O Pequeno Principe</h2>
+                <img id="pastel" src="pastel.png" >
+                <p class="produtos.descricao"></p>
+            </li>
+                            <li>
+                <h2>Lab Girl</h2>
+                <img id="lasanha" src="delicia.png" >
+                <p class="produtos.descricao"></p>
+            </li>
+            <li>
+                <h2>Kindred</h2>
+                <img id="trufa" src="trufas.png" >
+                <p class="produtos.descricao"></p>
+            </li>
+
+        </ul>
+
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>ativ</title>
+        </head>
+        <body>
+            <form>
+                Defina seu nivel de sasisfação:<br>
+                pouco satisfeito
+                <input type="range" name="satisfacao" min="0" max="10">
+                muito satisfeito
+            <br>
+                quantidade(entre 1 e 5): <input type="number" name="quantidade" min="1" max="5">        
+        
+            </form>
+</body>
+</html>
+
+</body>
+</html>
