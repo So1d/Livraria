@@ -1,0 +1,133 @@
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilo para o cabeçalho */
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Estilo para o logotipo */
+  header img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Estilo para o contêiner principal */
+  #conteudo {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo para os títulos */
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo para os parágrafos */
+  p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para o campo de entrada de valor */
+  #valorCompra {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  /* Estilo para o botão */
+  button {
+    display: block;
+    background-color: #0077cc;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0055aa;
+  }
+  
+  /* Estilo para a saída do desconto */
+  #desconto {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0077cc;
+  }
+  .produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    box-sizing: border-box;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+.produtos li:hover{
+    border-color: rgb(109, 46, 4);
+}
+#trufa{
+    width: 200px;
+}
+#pastel{
+    width: 200px;
+}
+#lasanha{
+    width: 200px;
+}
+#ata{
+    width: 200px;
+}
+#livro{
+  width: 50px;
+}
+table{
+  width: 50%;
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+
+th, td{
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th{
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even){
+  background-color: #ebe4b9;
+}
+
+tr:hover{
+  background-color: #ccc;
+}
